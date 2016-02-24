@@ -28,8 +28,7 @@ export default class App extends Component {
     let userCount = Users.find().fetch().length;
     let postsCount = Posts.find().fetch().length;
     return (
-      <div className="App">
-        <BlazeTemplate template={Template.loginButtons} />
+      <div className="App">        
         <h1>Hello Webpack!</h1>
         <p>There are {userCount} users in the Minimongo  (login to change)</p>
         <p>There are {postsCount} posts in the Minimongo  (autopublish removed)</p>
